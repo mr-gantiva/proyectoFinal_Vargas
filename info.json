@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "nombre": "Logitech G502",
+        "category": "Mouse Gamer",
+        "manufacturer": "Logitech",
+        "price": 49.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "logitech-g502.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Razer BlackWidow Elite",
+        "category": "Teclados Gamer",
+        "manufacturer": "Razer",
+        "price": 169.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "razer-blackWidow-elite.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "SteelSeries Arctis Pro",
+        "category": "Audifonos Gamer",
+        "manufacturer": "SteelSeries",
+        "price": 179.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "steelSeries-arctis-pro.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "ASUS ROG Strix GeForce RTX 3080",
+        "category": "Tarjetas Graficas",
+        "manufacturer": "ASUS",
+        "price": 699.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "asus-rog-strix-geforce-rtx-3080.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "HyperX Alloy Origins",
+        "category": "Teclados Gamer",
+        "manufacturer": "HyperX",
+        "price": 109.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "hyperx-alloy-origins.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Corsair K70 RGB MK.2",
+        "category": "Teclados Gamer",
+        "manufacturer": "Corsair",
+        "price": 159.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "corsair-k70-rgb-mk-2.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "LG 27GL850-B",
+        "category": "Monitor Gamer",
+        "manufacturer": "LG",
+        "price": 499.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "lg-27GL850-B.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Sony PlayStation 5",
+        "category": "Consolas",
+        "manufacturer": "Sony",
+        "price": 499.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "sony-playStation-5.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Microsoft Xbox Series X",
+        "category": "Consolas",
+        "manufacturer": "Microsoft",
+        "price": 499.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "microsoft-xbox-series-x.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "Logitech G Pro X Superlight",
+        "category": "Mouse Gamer",
+        "manufacturer": "Logitech",
+        "price": 149.99,
+        "envio": "envio rapido",
+        "stock": 2,
+        "rutaImagen": "logitech-g-pro-x-superlight.webp"
+    }
+]
