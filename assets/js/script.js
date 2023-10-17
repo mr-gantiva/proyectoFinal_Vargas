@@ -104,18 +104,17 @@
 // console.log(JSON.stringify(productosGamer));
 fetch("../info.json")
   .then((respuesta) => respuesta.json())
-  .then((productosGamer) => {
-    renderizarProductos(productosGamer, carrito);
-  });
+  .then((productosGamer) => principal(productosGamer));
 
 function principal(productosGamer) {
   let carritoRecuperado = localStorage.getItem("carrito");
   let carrito = carritoRecuperado ? JSON.parse(carritoRecuperado) : [];
 
   // let carrito = [];
-  actualizarContadorCarrito(carrito);
 
   renderizarCarrito(carrito);
+  renderizarProductos(productosGamer, carrito);
+  actualizarContadorCarrito(carrito);
 
   let buscador = document.getElementById("buscador");
   let botonBuscar = document.getElementById("buscar");
