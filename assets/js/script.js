@@ -129,7 +129,7 @@ function principal(productosGamer) {
     btn.addEventListener("click", () => {
       let category = btn.getAttribute("data-category");
 
-      filtrarporCategoria(category);
+      filtrarporCategoria(productosGamer, category);
     });
   });
 }
@@ -202,7 +202,7 @@ function filtrarYRenderizar(productosGamer, buscador) {
   renderizarProductos(producutosFiltrados, carrito);
 }
 
-function filtrarporCategoria(category) {
+function filtrarporCategoria(productosGamer, category) {
   let producutosFiltrados = productosGamer.filter(
     (producto) => producto.category === category
   );
