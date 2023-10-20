@@ -1,4 +1,5 @@
 :root {
+  --bg-header-footer: #1d0b41;
   --bg-ppal: #f5f5f5;
   --bg-cards: #ffffff;
   --texto-verde: #056152;
@@ -347,40 +348,56 @@ body {
 }
 
 .footer {
-  background: var(--color-primario);
+  background: var(--bg-header-footer);
+  padding: 40px;
 }
-.footer .contenedor-footer {
+.footer h5 {
+  border-left: 4px solid #0ac2a3;
+  padding-left: 5px;
+}
+.footer .footer-container {
   display: flex;
+  gap: 100px;
 }
-.footer .contenedor-footer .footer-info {
-  width: 100%;
+.footer .footer-container .footer-list {
   color: var(--bg-cards);
 }
-.footer .contenedor-footer a {
-  text-decoration: none;
-  color: var(--bg-cards);
-  cursor: pointer;
-}
-.footer .contenedor-footer li {
+.footer .footer-container .footer-list li {
   list-style: none;
 }
-.footer .contenedor-footer ion-icon {
+.footer .footer-container .footer-list a {
+  text-decoration: none;
   color: var(--bg-cards);
+}
+.footer .medio-pago-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--bg-cards);
+  padding-left: 30px;
+}
+.footer .medio-pago-container .iconos-pago-container picture {
+  margin-right: 40px;
 }
 .footer .redes-info {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 .footer .box-footer-redes {
   display: flex;
   gap: 20px;
 }
 .footer .box-footer-redes ion-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--bg-cards);
+  background: var(--color-primario);
+  padding: 5px;
+  border-radius: 4px;
 }
 .footer .box-footer-redes ion-icon:hover {
   color: var(--bg-purpura);
+  background: var(--texto-purpura);
   transform: translateY(-5px);
   transition: all 0.2s ease-in-out;
 }
@@ -469,9 +486,23 @@ body {
     width: 100%;
     height: 100vh;
   }
+  .footer .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer .medio-pago-container .iconos-pago-container picture img {
+    margin-bottom: 20px;
+  }
 }
 @media (482px <= width <= 768px) {
   .contenedor-categorias {
     gap: 20px;
+  }
+  .footer .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer .medio-pago-container .iconos-pago-container picture img {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <div class="container-fluid contenedor-menu">
+    <section class="container-fluid contenedor-menu">
       <div class="box-left">
         <div class="box-menu-mobile">
           <ion-icon name="menu-outline" id="mostrarBurgerMenu"></ion-icon>
@@ -39,9 +39,9 @@
           <span id="contadorCarrito">0</span>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="contenedor-categorias">
+    <section class="contenedor-categorias">
       <div class="box-categorias">
         <button class="btn-category" data-category="Mouse Gamer">Mouse Gamer</button>
       </div>
@@ -60,7 +60,7 @@
       <div class="box-categorias">
         <button class="btn-category" data-category="Consolas">Consolas</button>
       </div>
-    </div>
+    </section>
   </header>
 
   <section class="contenedor-banner">
@@ -120,8 +120,8 @@
       </button>
     </div> -->
 
-  <section class="ocultarCarrito" id="burgerMenu">
-    <div class="box-burger-menu">
+  <header class="ocultarCarrito" id="burgerMenu">
+    <section class="box-burger-menu">
       <div class="box-header-burger-menu">
         <div class="logo-tienda">
           <h4>Logo Tienda</h4>
@@ -150,14 +150,84 @@
           <li class="btn-category" data-category="Consolas">Consolas</li>
         </div>
       </ul>
-    </div>
-  </section>
+    </section>
+  </header>
 
   <div id="contenedorProductos" class="container contenedor-productos">
   </div>
 
-  <div class="footer" data-background-color="gray">
-    <div class="container contenedor-footer" data-gray-color="gray">
+  <footer class="footer" data-background-color="gray">
+
+    <div class="container">
+      <div class="footer-container">
+        <section class="footer-list">
+
+          <ul>
+            <h5>Ayuda</h5>
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Seguimiento de mi compra</a></li>
+            <li><a href="#">Formulario de contacto</a></li>
+            <li><a href="#">Bases de concursos</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-list">
+          <ul>
+            <h5>Nosotros</h5>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Ventas corporativas</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-list">
+          <ul>
+            <h5>Comunidad Gamer Tech</h5>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitch</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="medio-pago-container">
+        <section class="img-pago-container">
+          <div>
+            <h5>Medios de pago</h5>
+          </div>
+          <div class="iconos-pago-container">
+            <picture><img src="./assets/img/webpay_Desktop.svg" alt="Icono Webpay"></picture>
+            <picture><img src="./assets/img/mercadoPago_Desktop.svg" alt="icono Mercado Pago"></picture>
+            <picture><img src="./assets/img/santander.svg" alt="logo Banco Santander"></picture>
+            <picture><img src="./assets/img/bancoEstado_Desktop.svg" alt="logo Banco Estado"></picture>
+            <picture><img src="./assets/img/fpay.svg" alt="logo Fpay"></picture>
+            <picture><img src="./assets/img/transferencia_Desktop.svg" alt="icono transferencia"></picture>
+          </div>
+        </section>
+      </div>
+
+      <div class="container redes-info">
+        <div class="box-footer-redes">
+          <div>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <div class="container contenedor-footer" data-gray-color="gray">
       <div class="footer-info">
         <a class="foot-brand" href="index.html">GamaTech</a>
         <ul class="pull-center">
@@ -194,8 +264,8 @@
           </a>
         </div>
       </div>
-    </div>
-  </div>
+    </div> -->
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
