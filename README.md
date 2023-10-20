@@ -1,6 +1,6 @@
 # Gama Tech - Tienda Online
 
-Bienvenido a **Gama Tech**, una tienda en línea de productos electrónicos para gamers. Este proyecto te permite explorar, buscar y comprar una amplia variedad de productos, desde mouse y teclados gamer hasta tarjetas gráficas y consolas.
+Bienvenido a **Gama Tech**, una tienda (demo) en línea de productos electrónicos para gamers. Este proyecto te permite explorar, buscar y comprar una amplia variedad de productos, desde mouse y teclados gamer hasta tarjetas gráficas y consolas.
 
 ## Capturas de Pantalla
 
