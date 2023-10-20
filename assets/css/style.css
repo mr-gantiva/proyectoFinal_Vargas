@@ -493,6 +493,9 @@ body {
   .footer .medio-pago-container .iconos-pago-container picture img {
     margin-bottom: 20px;
   }
+  .footer .redes-info {
+    justify-content: center;
+  }
 }
 @media (482px <= width <= 768px) {
   .contenedor-categorias {
@@ -504,5 +507,8 @@ body {
   }
   .footer .medio-pago-container .iconos-pago-container picture img {
     margin-bottom: 20px;
+  }
+  .footer .redes-info {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -102,15 +102,16 @@
 // ];
 
 // console.log(JSON.stringify(productosGamer));
+
+let carrito = [];
+
 fetch("../info.json")
   .then((respuesta) => respuesta.json())
   .then((productosGamer) => principal(productosGamer));
 
 function principal(productosGamer) {
-  let carritoRecuperado = localStorage.getItem("carrito");
-  let carrito = carritoRecuperado ? JSON.parse(carritoRecuperado) : [];
-
-  // let carrito = [];
+  // let carritoRecuperado = localStorage.getItem("carrito");
+  // let carrito = carritoRecuperado ? JSON.parse(carritoRecuperado) : [];
 
   renderizarCarrito(carrito);
   renderizarProductos(productosGamer, carrito);
@@ -126,11 +127,17 @@ function principal(productosGamer) {
   let btnsCategoria = document.querySelectorAll(".btn-category");
 
   btnsCategoria.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      let category = btn.getAttribute("data-category");
+    btn.addEventListener("click", (event) => {
+      let category = event.target.getAttribute("data-category");
 
       filtrarporCategoria(productosGamer, category);
     });
+  });
+
+  let mostrarTodosBtn = document.getElementById("mostrarTodos");
+  mostrarTodosBtn.addEventListener("click", () => {
+    // Llamamos a la función que muestra todos los productos
+    renderizarProductos(productosGamer, carrito);
   });
 }
 
@@ -212,6 +219,9 @@ function filtrarporCategoria(productosGamer, category) {
 
 /******************************************************************/
 function agregarProductoCarrito(productosGamer, carrito, e) {
+  if (!Array.isArray(carrito)) {
+    carrito = [];
+  }
   let productoSolicitado = productosGamer.find(
     (producto) => producto.id === Number(e.target.id)
   );
