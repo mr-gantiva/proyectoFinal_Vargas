@@ -105,7 +105,7 @@
 
 let carrito = [];
 
-fetch("/../info.json")
+fetch("./info.json")
   .then((respuesta) => respuesta.json())
   .then((productosGamer) => principal(productosGamer));
 
